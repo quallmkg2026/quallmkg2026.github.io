@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuaLLM-KG 2026 – 1st International Workshop on Quality in LLMs & Knowledge Graphs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ================= CSS ================= -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Navigation */
+        header {
+            background: #003366;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        #home {
+            text-align: center;
+            padding: 60px 0;
+            background: #e8f0f8;
+        }
+
+        /* CARDS */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        /* ----- TITRES ----- */
+        .section-title {
+            color: #005fa3;            /* blue */
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 6px solid #ff6600; /* orange accent */
+            padding-left: 12px;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #003366;
+            margin-top: 25px;
+            font-weight: 600;
+            padding-bottom: 4px;
+        }
+
+        ul {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+
+        /* Footer Banner (ancienne définition mais inutile) */
+        .banner-footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 25px 10px;
+            margin-top: 50px;
+        }
+
+        /* Go to top */
+        .go-top {
+            text-align: right;
+        }
+        .go-top a {
+            text-decoration: none;
+            color: #005fa3;
+            font-weight: bold;
+        }
+
+        /* Mobile menu toggle (optionnel) */
+        #menu-toggle {
+            display: none;
+        }
+
+        /* ============================================================
+           >>>>>  BANNIÈRE BLEUE (AJOUTÉE POUR FONCTIONNER) <<<<<
+           ============================================================ */
+        #bottom-banner {
+            background: linear-gradient(135deg, #1f4b99 0%, #3273c5 60%, #4b8ce0 100%);
+            color: white;
+            padding: 25px 10px;
+            margin-top: 50px;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+        }
+
+        .footer-left,
+        .footer-right {
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            .footer-flex {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+        /* ============================================================ */
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container nav">
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#submission">Submission</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#committee">Program Committee</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- ================= HERO / BANNER ================= -->
+<section id="home">
+    <div class="container home-center">
+        <h1>QuaLLM-KG 2026</h1>
+        <h2>1st International Workshop on Quality in Large Language Models and Knowledge Graphs</h2>
+
+        <p class="hero-meta">
+            In conjunction with EDBT 2026 · Tampere, Finland
+        </p>
+
+        <p class="hero-meta">
+            <em>(Submission Deadline: December 12, 2025)</em>
+        </p>
+    </div>
+</section>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container">
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <h2 class="section-title">About the QuaLLM-KG Workshop</h2>
+
+        <div class="card">
+            <p>
+                The rapid progress of knowledge graphs (KGs) and large language models (LLMs) has transformed
+                data science, data management, and artificial intelligence. Knowledge graphs have become a central
+                paradigm for representing structured information, while LLMs provide unprecedented capabilities in
+                natural language understanding and generation.
+            </p>
+
+            <p>
+                Their success depends heavily on the quality of the underlying data, models, and processes. KGs suffer
+                from incompleteness, incorrect links, outdated facts, and lack of provenance; LLMs suffer from
+                hallucinations, bias, lack of factual grounding, and reproducibility issues.
+            </p>
+
+            <p>
+                When KGs and LLMs are combined—KG-grounded LLMs or LLM-assisted KG construction—the quality challenges
+                multiply and require novel evaluation, integration, and trustworthiness solutions.
+            </p>
+
+            <p>
+                The workshop brings together communities across databases, AI, NLP, knowledge representation,
+                information retrieval, data quality, and data governance to foster research on ensuring quality
+                in KGs, LLMs, and their hybrid systems.
+            </p>
+
+            <p>
+                QuaLLM-KG aims to bridge theoretical, methodological, and empirical perspectives while providing
+                demonstrations and practical case studies to give attendees hands-on understanding of real-world
+                solutions for LLM/KG quality.
+            </p>
+        </div>
+
+        <h2 class="section-title">Topics of Interest</h2>
+
+        <div class="card">
+            <h3>Quality in Knowledge Graphs</h3>
+            <ul>
+                <li>Accuracy, consistency, completeness, freshness</li>
+                <li>Schema validation, constraint checking, error detection</li>
+                <li>Entity resolution, link prediction, ontology alignment</li>
+                <li>Provenance, explainability, trust in KG data</li>
+                <li>KG quality in dynamic and large-scale settings</li>
+            </ul>
+
+            <h3>Quality in Large Language Models</h3>
+            <ul>
+                <li>Hallucination reduction &amp; factual grounding</li>
+                <li>Bias detection and mitigation</li>
+                <li>Metrics &amp; benchmarks for quality assessment</li>
+                <li>Uncertainty estimation, calibration, interpretability</li>
+            </ul>
+
+            <h3>Synergies Between KGs and LLMs</h3>
+            <ul>
+                <li>KG-based grounding and fact-checking for LLMs</li>
+                <li>LLM-based KG enrichment, extraction, entity linking</li>
+                <li>Quality-driven prompting and fine-tuning</li>
+                <li>Hybrid KG–LLM architectures for quality assurance</li>
+                <li>Evaluation frameworks for integration and consistency</li>
+            </ul>
+
+            <h3>Benchmarks and Evaluation Frameworks</h3>
+            <ul>
+                <li>Datasets and metrics for KG &amp; LLM quality</li>
+                <li>Tools for monitoring, validation, maintenance</li>
+                <li>Reproducibility, transparency, responsible AI</li>
+            </ul>
+
+            <h3>Applications and Case Studies</h3>
+            <ul>
+                <li>Scientific, industrial, enterprise use cases</li>
+                <li>Quality at scale</li>
+                <li>Human-in-the-loop quality control</li>
+            </ul>
+        </div>
+
+        <p class="go-top"><a href="#home">Go to top ↑</a></p>
+    </section>
+
+
+
+    <!-- ===== SUBMISSION ===== -->
+    <section id="submission">
+        <h2 class="section-title">Submission</h2>
+
+        <div class="card">
+       
+
+<p>The workshop solicits papers in the following categories:</p>
+
+<ul>
+    <li><strong>Research Papers:</strong> Propose new approaches, theories, or techniques related to ensuring or evaluating quality in KGs and LLMs. These papers should make substantial theoretical or empirical contributions.</li>
+
+    <li><strong>System Papers:</strong> Present new systems, frameworks, or platforms for managing, assessing, or improving quality in KGs and/or LLMs.</li>
+
+    <li><strong>Experiments and Analysis Papers:</strong> Provide empirical evaluations of existing methods, offering insights into quality issues, benchmarks, reproducibility, or unexpected behaviors. Comparative studies in novel settings are welcome.</li>
+
+    <li><strong>Application Papers:</strong> Describe practical experiences applying KGs, LLMs, or hybrid methods to real-world domains 
+        (e.g., healthcare, finance, scientific research), with an emphasis on quality management.</li>
+
+    <li><strong>Vision Papers:</strong> Identify emerging challenges and future research directions, proposing new visions for quality-aware KGs and LLMs that could influence data management and AI research.</li>
+
+    <li><strong>Demo Papers:</strong> Showcase innovative tools, platforms, or applications for assessing or improving the quality of KGs or LLMs. Interactive or WOW-effect demonstrations are particularly encouraged.</li>
+</ul>
+
+
+
+<p>
+    The workshop will accept <strong>full papers</strong> (up to 8 pages, excluding references) and 
+    <strong>short papers</strong> describing work in progress, systems, demos/systems/applications, or vision/outrageous ideas 
+    (up to 4 pages, excluding references).
+</p>
+
+<p>
+    All submissions must be prepared using the ACM template required by EDBT 2026.
+    The workshop follows the same Conflicts of Interest (COI) rules as EDBT 2026.
+</p>
+
+
+
+<p>
+    Accepted papers will be published in the CEUR Workshop proceedings (CEUR-WS.org). 
+</p>
+
+
+        </div>
+
+        <p class="go-top"><a href="#home">Go to top ↑</a></p>
+    </section>
+
+
+
+    <!-- ===== ORGANIZERS ===== -->
+    <section id="organizers">
+        <h2 class="section-title">Organizers</h2>
+
+        <div class="card">
+            <p><strong>Soror Sahri</strong>, Université Paris Cité, France</p>
+            <p><strong>Sven Groppe</strong>, University of Lübeck, Germany</p>
+            <p><strong>Farah Benamara</strong>, University of Toulouse &amp; CNRS IPAL, Singapore</p>
+        </div>
+
+        <p class="go-top"><a href="#home">Go to top ↑</a></p>
+    </section>
+
+
+
+    <!-- ===== PROGRAM COMMITTEE ===== -->
+    <section id="committee">
+        <h2 class="section-title">Program Committee</h2>
+
+        <div class="card">
+            <ul class="pc-list">
+                <li>Hanieh Khorashadizadeh, University of Lübeck</li>
+                <li>Valter Uotila, University of Helsinki</li>
+                <li>Sanju Tiwari, Sharda University</li>
+                <li>Nathalie Aussenac, IRIT–CNRS</li>
+                <li>Raphaël Troncy, EURECOM</li>
+                <li>Fabian M. Suchanek, Institut Polytechnique de Paris</li>
+                <li>Nandana Mihindukulasooriya, IBM Research</li>
+                <li>Asma Abboura, University of Hassiba Benbouali</li>
+                <li>Imane Hocine, University of Luxembourg</li>
+            </ul>
+        </div>
+
+        <p class="go-top"><a href="#home">Go to top ↑</a></p>
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer id="bottom-banner">
+    <div class="footer-flex">
+        <span class="footer-left">© QuaLLM-KG 2026 — All rights reserved</span>
+        <span class="footer-right">Maintained by the organizing committee</span>
+    </div>
+</footer>
+
+
+
+<!-- ================= JS ================= -->
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+
+</body>
+</html>
