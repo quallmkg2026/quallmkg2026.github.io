@@ -1,233 +1,100 @@
-/* ============= RESET ============= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ================= GENERAL ================= */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: #24292e;
-    background: #ffffff;
-    line-height: 1.6;
-}
-
-a {
-    color: #1f4b99;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
 }
 
 .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
 }
 
-
-/* ============= HEADER ============= */
+/* ================= NAVIGATION ================= */
 header {
-    background: #ffffff;
-    border-bottom: 1px solid #e1e4ee;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.7rem 0;
+    background: #003366;
+    color: white;
+    padding: 10px 0;
 }
 
 nav ul {
-    display: flex;
-    gap: 2rem;
     list-style: none;
-}
-
-nav a {
-    color: #24292e;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-nav a:hover {
-    border-bottom: 2px solid #1f4b99;
-    padding-bottom: 2px;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-
-/* ============= HERO (BANNER TOP) ============= */
-#home {
-    height: 55vh;
-    min-height: 330px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    background: linear-gradient(135deg, #1f4b99 0%, #3273c5 60%, #4b8ce0 100%);
-    color: #ffffff;
-
-    padding: 2rem 1rem;
-}
-
-.home-center {
-    max-width: 800px;
-}
-
-#home h1 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-}
-
-#home h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
-.hero-meta {
-    font-size: 1rem;
-    opacity: 0.9;
-    margin-bottom: 0.4rem;
-}
-
-
-/* ============= SECTIONS ============= */
-main section {
-    padding: 1.4rem 0;
-    border-top: 1px solid #dcdfe6;
-}
-
-main section:first-of-type {
-    border-top: none;
-}
-
-.section-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.card {
-    border: none;
-    background: transparent;
     padding: 0;
-    margin-bottom: 0.8rem;
+    margin: 0;
+    text-align: center;
 }
 
-.card p {
-    margin-bottom: 0.6rem;
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-.pc-list {
-    padding-left: 1.2rem;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+/* ================= HERO ================= */
+#home {
+    text-align: center;
+    padding: 60px 0;
+    background: #e8f0f8;
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* ================= TITLES ================= */
+.section-title {
+    color: #005fa3;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 6px solid #ff6600;
+    padding-left: 12px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #003366;
+    margin-top: 25px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+/* ================= NOMS EN ROUGE ================= */
+.person-name {
+    color: #c0392b; /* Rouge utilisé dans qdb-workshop */
+    font-weight: 600;
+}
+
+/* ================= GO TO TOP ================= */
 .go-top {
     text-align: right;
-    margin-top: 1rem;
-    font-size: 0.85rem;
 }
 
-
-/* ============= TOPICS (compact layout) ============= */
-#about .card h3 {
-    margin-top: 8px;
-    margin-bottom: 2px;
-    font-weight: 600;
+.go-top a {
+    text-decoration: none;
+    color: #005fa3;
+    font-weight: bold;
 }
 
-#about .card ul {
-    margin-top: 0;
-    margin-bottom: 4px;
-    padding-left: 1.1rem;
-}
-
-#about .card ul li {
-    margin-bottom: 2px;
-}
-
-
-/* ============= FOOTER (BLUE BANNER) ============= */
-footer {
-    margin-top: 2rem;
-}
-
-#bottom-banner {
-    background: linear-gradient(135deg, #1f4b99 0%, #3273c5 60%, #4b8ce0 100%);
-    color: white;
-    padding: 1.4rem 1rem;
-}
-
-.footer-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 980px;
-    margin: 0 auto;
-    font-size: 0.9rem;
-}
-
-.footer-left,
-.footer-right {
-    color: white;
-}
-
-/* ============= RESPONSIVE ============= */
-@media (max-width: 700px) {
-
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        left: 1rem;
-        font-size: 1.4rem;
-        cursor: pointer;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 56px;
-        right: 0;
-        flex-direction: column;
-        padding: 0.7rem 1rem;
-        background: white;
-        border: 1px solid #e1e4ee;
-        display: none;
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    #home {
-        height: auto;
-        padding: 3rem 1rem;
-    }
-
-    #home h1 {
-        font-size: 2rem;
-    }
-
-    #home h2 {
-        font-size: 1.05rem;
-    }
-
-    .footer-flex {
-        flex-direction: column;
-        gap: 0.4rem;
-        text-align: center;
-    }
-}
-/* ===== BLUE FOOTER BANNER ===== */
+/* ================= FOOTER BLUE BANNER ================= */
 #bottom-banner {
     background: linear-gradient(135deg, #1f4b99 0%, #3273c5 60%, #4b8ce0 100%);
     color: white;
@@ -244,12 +111,11 @@ footer {
     font-size: 0.9rem;
 }
 
-.footer-left,
-.footer-right {
+.footer-left, .footer-right {
     color: white;
 }
 
-/* Mobile responsive */
+/* ================= MOBILE ================= */
 @media (max-width: 700px) {
     .footer-flex {
         flex-direction: column;
